@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Neale-Mateo Project</title>
 </head>
 <body>
-    <h1>Hello world!</h1>
-    <h2>My name is Neale!</h2>
-    
-
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label id="name-label">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br>
+        <br>
+        <label id="email-label">E-mail:</label><br>
+        <input type="email" name="email" id="email"placeholder="Enter your email">
+        <br>
+        <br>
+        <label id="number-label">Age:</label><br>
+        <input type="number" name="number" id="number" min="1" max="99" placeholder="Enter your age">
+        <br>
+        <br>
+        <label id="dropdown-label">Which option best describes your current role?</label><br>
+        <select name="dropdown" id="dropdown">
+            <option value="op1">select current role</option>
+            <option value="op2">Student</option>
+            <option value="op3">Full time job</option>
+            <option value="op4">Full time learner</option>
+            <option value="op5">Prefer not to say</option>
+            <option value="op6">Other</option>
+        </select>
+        <br>
+        <br>
+        <label>Would you recommend freeCodeCamp to a friend?</label><br>
+        <input type="radio" name="recommend" value="def">
+        <label for="def">Definitely</label><br>
+        <input type="radio" name="recommend" value="maybe">
+        <label for="def">Maybe</label><br>
+        <input type="radio" name="recommend" value="not">
+        <label for="def">Not sure</label><br>
+    </form>
 </body>
 </html>
